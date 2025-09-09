@@ -1,14 +1,14 @@
 node {
     stage('Clone') {
-            git branch: 'main', url: 'https://github.com/Youness12445T75658/java.git'
-	        }
+        git branch: 'main', url: 'https://github.com/Youness12445T75658/java.git'
+    }
 
-		    stage('Build') {
-		            sh '''javac Main.java'''
-			        }
+    stage('Build') {
+        sh '''javac Main.java'''
+    }
 
-				    stage('Run') {
-				            sh '''java Main'''
-					        }
-						}
+    stage('Run') {
+        sh '''java Main'''
+    }
+}
 						
